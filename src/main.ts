@@ -26,6 +26,10 @@ document.querySelector('.skip-link')?.addEventListener('click', (event) => {
   main.focus();
 });
 
+function navigate(href: string) {
+  window.location.hash = href;
+}
+
 function renderSaved() {
   const view = savedView(preferences.savedIds(), (id, index) => {
     preferences.toggleSaved(id);
@@ -69,7 +73,7 @@ function render(focusHeading = false) {
       scope: route.scope,
       draft: preferences.customDraft(),
       onEdit: preferences.setCustomDraft,
-      onContinue: (href) => { window.location.hash = href; },
+      onContinue: navigate,
     }));
   } else if (route.view === 'detail') {
     const detail = resolveSituation(route, preferences.customDraft(), preferences.searchQuery());
@@ -79,11 +83,14 @@ function render(focusHeading = false) {
       return;
     }
     if (detail.kind === 'catalog') preferences.remember(route.scope, route.id);
-    document.title = `${route.step === 'perspectives' ? 'Other perspectives' : 'Explore a situation'} | Perspective Lab`;
+    document.title = `${route.step === 'perspectives' ? 'Other perspectives' : 'Initial interpretation'} | Perspective Lab`;
     main.replaceChildren(explorerView({
       route,
       detail,
+      interpretation: preferences.interpretation(detail.interpretationKey),
       saved: detail.kind === 'catalog' && preferences.isSaved(route.id),
+      onInterpretationChange: (update) => preferences.setInterpretation(detail.interpretationKey, update),
+      onContinue: navigate,
       onToggleSave: () => {
         const saved = preferences.toggleSaved(route.id);
         announcement.textContent = saved ? 'Situation added to Saved.' : 'Situation removed from Saved.';
@@ -92,11 +99,6 @@ function render(focusHeading = false) {
     }));
   }
   if (focusHeading) {
-    const perspectives = main.querySelector<HTMLElement>('#perspective-heading');
-    if (perspectives) {
-      perspectives.focus();
-      return;
-    }
     window.scrollTo({ top: 0, behavior: 'instant' });
     main.querySelector('h1')?.focus({ preventScroll: true });
   }

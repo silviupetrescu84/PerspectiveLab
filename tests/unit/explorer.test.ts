@@ -45,6 +45,8 @@ describe('catalog exploration', () => {
     expect(situation.links?.next).toBe(exploreHref('work', 'situation-011', 'perspectives'));
     const perspectives = openSituation(situation.links!.next);
     expect(perspectives.current).toBe(situation.current);
+    expect(perspectives.interpretationKey).toBe('situation-011');
+    expect(openSituation(exploreHref('all', 'situation-011')).interpretationKey).toBe(perspectives.interpretationKey);
     expect(perspectives.links).toEqual({ back: href, next: exploreHref('work') });
   });
 
@@ -84,10 +86,11 @@ describe('custom exploration', () => {
     const alternatives = exploreHref('family', CUSTOM_ID, 'perspectives');
     const text = 'My brother left quietly.\nI did not ask why.';
     expect(openSituation(review, { draft })).toEqual({
-      kind: 'custom', text, prompts: [], links: { back: exploreHref('family', CUSTOM_ID), next: alternatives },
+      kind: 'custom', text, interpretationKey: `custom:${text}`, prompts: [],
+      links: { back: exploreHref('family', CUSTOM_ID), next: alternatives },
     });
     expect(openSituation(alternatives, { draft })).toEqual({
-      kind: 'custom', text, links: { back: review, next: exploreHref('family') },
+      kind: 'custom', text, interpretationKey: `custom:${text}`, links: { back: review, next: exploreHref('family') },
       prompts: ['What supports this interpretation?', 'What might suggest something else?', 'What do I still not know?'],
     });
   });

@@ -1,4 +1,5 @@
 import { categoriesBySlug, situationsById } from './catalog';
+import { isBeliefRating, isInterpretationKey, type InitialInterpretation } from './interpretation';
 
 export const STORAGE_KEY = 'perspective-lab:v1';
 
@@ -7,16 +8,28 @@ interface Preferences {
   lastViewed: Record<string, string>;
   searchQuery: string;
   customDraft: string;
+  interpretations: Record<string, InitialInterpretation>;
 }
 
+const EMPTY_INTERPRETATION: Readonly<InitialInterpretation> = { text: '', belief: null };
+
 function readPreferences(storage: Storage | undefined): Preferences {
-  const preferences: Preferences = { saved: [], lastViewed: {}, searchQuery: '', customDraft: '' };
+  const preferences: Preferences = { saved: [], lastViewed: {}, searchQuery: '', customDraft: '', interpretations: {} };
   try {
     const raw = storage?.getItem(STORAGE_KEY);
     if (!raw) return preferences;
     const data = JSON.parse(raw);
     if (typeof data?.searchQuery === 'string') preferences.searchQuery = data.searchQuery;
     if (typeof data?.customDraft === 'string') preferences.customDraft = data.customDraft;
+    if (data?.interpretations && typeof data.interpretations === 'object') {
+      for (const [key, value] of Object.entries(data.interpretations)) {
+        if (!isInterpretationKey(key) || !value || typeof value !== 'object') continue;
+        const stored = value as { text?: unknown; belief?: unknown };
+        const text = typeof stored.text === 'string' ? stored.text : '';
+        const belief = isBeliefRating(stored.belief) ? stored.belief : null;
+        if (text || belief !== null) preferences.interpretations[key] = { text, belief };
+      }
+    }
     if (Array.isArray(data?.saved)) {
       preferences.saved = [...new Set<string>(data.saved.filter((id: unknown) =>
         typeof id === 'string' && situationsById.has(id)))];
@@ -60,6 +73,21 @@ export function createPreferences(storage?: Storage) {
     lastViewed: (scope: string) => preferences.lastViewed[scope],
     searchQuery: () => preferences.searchQuery,
     customDraft: () => preferences.customDraft,
+    interpretation(key: string): InitialInterpretation {
+      const value = isInterpretationKey(key) ? preferences.interpretations[key] : undefined;
+      return { ...(value ?? EMPTY_INTERPRETATION) };
+    },
+    setInterpretation(key: string, update: Partial<InitialInterpretation>) {
+      if (!isInterpretationKey(key)) return;
+      refresh();
+      const previous = preferences.interpretations[key] ?? EMPTY_INTERPRETATION;
+      const text = typeof update.text === 'string' ? update.text : previous.text;
+      const belief = update.belief === null || isBeliefRating(update.belief) ? update.belief : previous.belief;
+      if (text === previous.text && belief === previous.belief) return;
+      if (!text && belief === null) delete preferences.interpretations[key];
+      else preferences.interpretations[key] = { text, belief };
+      write();
+    },
     setSearchQuery(query: string) {
       refresh();
       if (preferences.searchQuery === query) return;

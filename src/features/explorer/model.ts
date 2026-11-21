@@ -1,5 +1,6 @@
 import reflection from '../../assets/reflection_prompts.json' with { type: 'json' };
 import { categoriesBySlug, situations, type Situation } from '../../lib/catalog';
+import { customInterpretationKey } from '../../lib/interpretation';
 import { CUSTOM_ID, exploreHref, type DetailRoute } from '../../lib/navigation';
 
 function searchWords(text: string): string {
@@ -46,6 +47,7 @@ export function resolveSituation(route: DetailRoute, draft: string, query: strin
     return {
       kind: 'custom' as const,
       text,
+      interpretationKey: customInterpretationKey(text),
       links,
       prompts: step === 'perspectives' ? Object.values(reflection.defaultPrompts) : [],
     };
@@ -59,6 +61,7 @@ export function resolveSituation(route: DetailRoute, draft: string, query: strin
   return {
     kind: 'catalog' as const,
     current,
+    interpretationKey: current.id,
     links,
     index,
     total: collection.length,
