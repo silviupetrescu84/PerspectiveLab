@@ -5,14 +5,18 @@ export const STORAGE_KEY = 'perspective-lab:v1';
 interface Preferences {
   saved: string[];
   lastViewed: Record<string, string>;
+  searchQuery: string;
+  customDraft: string;
 }
 
 function readPreferences(storage: Storage | undefined): Preferences {
-  const preferences: Preferences = { saved: [], lastViewed: {} };
+  const preferences: Preferences = { saved: [], lastViewed: {}, searchQuery: '', customDraft: '' };
   try {
     const raw = storage?.getItem(STORAGE_KEY);
     if (!raw) return preferences;
     const data = JSON.parse(raw);
+    if (typeof data?.searchQuery === 'string') preferences.searchQuery = data.searchQuery;
+    if (typeof data?.customDraft === 'string') preferences.customDraft = data.customDraft;
     if (Array.isArray(data?.saved)) {
       preferences.saved = [...new Set<string>(data.saved.filter((id: unknown) =>
         typeof id === 'string' && situationsById.has(id)))];
@@ -54,6 +58,20 @@ export function createPreferences(storage?: Storage) {
     savedIds: () => [...preferences.saved],
     isSaved: (id: string) => preferences.saved.includes(id),
     lastViewed: (scope: string) => preferences.lastViewed[scope],
+    searchQuery: () => preferences.searchQuery,
+    customDraft: () => preferences.customDraft,
+    setSearchQuery(query: string) {
+      refresh();
+      if (preferences.searchQuery === query) return;
+      preferences.searchQuery = query;
+      write();
+    },
+    setCustomDraft(draft: string) {
+      refresh();
+      if (preferences.customDraft === draft) return;
+      preferences.customDraft = draft;
+      write();
+    },
     remember(scope: string, id: string) {
       refresh();
       if (preferences.lastViewed[scope] === id) return;

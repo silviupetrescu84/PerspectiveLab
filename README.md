@@ -1,6 +1,6 @@
 # Perspective Lab
 
-Perspective Lab is an open-source reflection tool with 100 everyday situations across ten categories. Read some common first thoughts, then reveal other plausible interpretations. Save situations to revisit, and resume your place in each category on the same browser.
+Perspective Lab is an open-source reflection tool with 100 everyday situations across ten categories. Search or filter the library, choose a situation, then compare common first thoughts with other plausible interpretations. You can also write about a situation of your own and explore it with guided questions.
 
 ## Run locally
 
@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-`npm run build` writes the static website to `dist/`. Serve that directory with any static host, or run `npm run preview` to inspect it locally. Hash-based links work without server routing rules. Bookmarks and resume positions are stored in browser `localStorage`.
+`npm run build` writes the static website to `dist/`. Serve that directory with any static host, or run `npm run preview` to inspect it locally. Hash-based links work without server routing rules. Bookmarks, resume positions, search text, and the custom situation draft are stored in browser `localStorage`.
 
 ## Test
 
@@ -19,7 +19,7 @@ npm run dev
 npm test
 ```
 
-The unit suite checks all 100 catalog entries, category navigation, deep links, and the storage used for bookmarks and resume positions.
+The unit suite checks all 100 catalog entries, search and category filters, exploration steps, deep links, and local storage.
 
 ## Source layout
 

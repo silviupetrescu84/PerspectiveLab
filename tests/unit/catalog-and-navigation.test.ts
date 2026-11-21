@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { categories, categoriesBySlug, categorySlug, situations, situationsById } from '../../src/lib/catalog';
-import { exploreHref, getExploration, readRoute } from '../../src/lib/navigation';
+import { CUSTOM_ID, exploreHref, readRoute } from '../../src/lib/navigation';
 
 it('indexes every situation once, in a declared category, with both kinds of interpretations', () => {
   expect(categories).toHaveLength(10);
@@ -21,23 +21,29 @@ it('indexes every situation once, in a declared category, with both kinds of int
 });
 
 describe('hash routing', () => {
-  it.each(['', '#main', '#/', '#/missing', '#/saved/unexpected', '#/explore/a/b/c'])('falls back to home for %s', (hash) => {
+  it.each(['', '#main', '#/', '#/missing', '#/saved/unexpected', '#/explore/a/b/c/d'])('falls back to home for %s', (hash) => {
     expect(readRoute(hash)).toEqual({ page: 'home' });
   });
 
-  it('parses supported links and falls back to all situations for an unknown scope', () => {
+  it('opens the library from Explore and category links', () => {
     expect(readRoute('#/categories')).toEqual({ page: 'home', section: 'categories' });
     expect(readRoute('#/saved')).toEqual({ page: 'saved' });
-    expect(readRoute('#/explore')).toEqual({ page: 'explore', scope: 'all' });
-    expect(readRoute('#/explore/unknown')).toEqual({ page: 'explore', scope: 'all' });
-    expect(readRoute(exploreHref('work', 'situation-011'))).toEqual({ page: 'explore', scope: 'work', id: 'situation-011' });
+    expect(readRoute('#/explore')).toEqual({ page: 'explore', scope: 'all', view: 'library' });
+    expect(readRoute('#/explore/unknown')).toEqual({ page: 'explore', scope: 'all', view: 'library' });
+    expect(readRoute(exploreHref('work'))).toEqual({ page: 'explore', scope: 'work', view: 'library' });
+    expect(readRoute('#/explore/work/situation-011/missing')).toEqual({ page: 'explore', scope: 'work', view: 'library' });
   });
 
-  it('resumes within a category, gives priority to a deep link, and falls back for invalid IDs', () => {
-    expect(getExploration('all').collection).toBe(situations);
-    expect(getExploration('work', undefined, 'situation-013').current?.id).toBe('situation-013');
-    expect(getExploration('work', 'situation-014', 'situation-013').index).toBe(3);
-    expect(getExploration('work', 'situation-001').current?.id).toBe('situation-011');
-    expect(getExploration('all', 'unknown').current?.id).toBe('situation-001');
+  it('keeps old situation links usable and handles both custom steps', () => {
+    expect(exploreHref('work', 'situation-011', 'situation')).toBe('#/explore/work/situation-011');
+    expect(readRoute('#/explore/work/situation-011')).toEqual({
+      page: 'explore', scope: 'work', view: 'detail', id: 'situation-011', step: 'situation',
+    });
+    expect(readRoute(exploreHref('work', CUSTOM_ID))).toEqual({ page: 'explore', scope: 'work', view: 'custom' });
+    for (const step of ['situation', 'perspectives'] as const) {
+      expect(readRoute(exploreHref('work', CUSTOM_ID, step))).toEqual({
+        page: 'explore', scope: 'work', view: 'detail', id: CUSTOM_ID, step,
+      });
+    }
   });
 });

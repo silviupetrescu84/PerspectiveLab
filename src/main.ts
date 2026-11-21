@@ -5,10 +5,13 @@ import './features/home/home.css';
 import './features/explorer/explorer.css';
 import './features/saved/saved.css';
 import { highlightNavigation, siteHeader } from './components/header';
+import { customView } from './features/explorer/custom';
+import { libraryView } from './features/explorer/library';
+import { resolveSituation } from './features/explorer/model';
 import { explorerView } from './features/explorer/view';
 import { homeView } from './features/home/view';
 import { savedView } from './features/saved/view';
-import { exploreHref, getExploration, readRoute } from './lib/navigation';
+import { exploreHref, readRoute } from './lib/navigation';
 import { browserStorage, createPreferences, STORAGE_KEY } from './lib/preferences';
 
 const header = document.querySelector<HTMLElement>('#site-header')!;
@@ -51,29 +54,49 @@ function render(focusHeading = false) {
   } else if (route.page === 'saved') {
     document.title = 'Saved situations | Perspective Lab';
     renderSaved();
-  } else {
-    const { scope, id } = route;
-    const selection = getExploration(scope, id, preferences.lastViewed(scope));
-    const current = selection.current;
-    if (current) {
-      const canonical = exploreHref(scope, current.id);
-      if (window.location.hash !== canonical) window.history.replaceState(null, '', canonical);
-      preferences.remember(scope, current.id);
+  } else if (route.view === 'library') {
+    document.title = 'Situation Explorer | Perspective Lab';
+    main.replaceChildren(libraryView({
+      scope: route.scope,
+      query: preferences.searchQuery(),
+      lastViewed: preferences.lastViewed,
+      onScopeChange: (scope) => window.history.replaceState(null, '', exploreHref(scope)),
+      onQueryChange: preferences.setSearchQuery,
+    }));
+  } else if (route.view === 'custom') {
+    document.title = 'Write your own situation | Perspective Lab';
+    main.replaceChildren(customView({
+      scope: route.scope,
+      draft: preferences.customDraft(),
+      onEdit: preferences.setCustomDraft,
+      onContinue: (href) => { window.location.hash = href; },
+    }));
+  } else if (route.view === 'detail') {
+    const detail = resolveSituation(route, preferences.customDraft(), preferences.searchQuery());
+    if (detail.redirect !== undefined) {
+      window.history.replaceState(null, '', detail.redirect);
+      render(focusHeading);
+      return;
     }
-    document.title = `${selection.category?.name ?? 'Explore'} | Perspective Lab`;
+    if (detail.kind === 'catalog') preferences.remember(route.scope, route.id);
+    document.title = `${route.step === 'perspectives' ? 'Other perspectives' : 'Explore a situation'} | Perspective Lab`;
     main.replaceChildren(explorerView({
-      scope,
-      selection,
-      saved: current !== undefined && preferences.isSaved(current.id),
+      route,
+      detail,
+      saved: detail.kind === 'catalog' && preferences.isSaved(route.id),
       onToggleSave: () => {
-        if (!current) return false;
-        const saved = preferences.toggleSaved(current.id);
+        const saved = preferences.toggleSaved(route.id);
         announcement.textContent = saved ? 'Situation added to Saved.' : 'Situation removed from Saved.';
         return saved;
       },
     }));
   }
   if (focusHeading) {
+    const perspectives = main.querySelector<HTMLElement>('#perspective-heading');
+    if (perspectives) {
+      perspectives.focus();
+      return;
+    }
     window.scrollTo({ top: 0, behavior: 'instant' });
     main.querySelector('h1')?.focus({ preventScroll: true });
   }
@@ -88,7 +111,7 @@ window.addEventListener('storage', (event) => {
     const focused = main.contains(document.activeElement);
     renderSaved();
     if (focused) main.querySelector('h1')?.focus({ preventScroll: true });
-  } else if (route.page === 'explore' && route.id) {
+  } else if (route.page === 'explore' && route.view === 'detail') {
     const save = main.querySelector<HTMLButtonElement>('.save-button');
     save?.setAttribute('aria-pressed', String(preferences.isSaved(route.id)));
   }

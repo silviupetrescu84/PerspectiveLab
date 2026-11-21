@@ -55,15 +55,43 @@ it('ignores invalid, duplicate and cross-category stored values', () => {
   storage.setItem(STORAGE_KEY, JSON.stringify({
     saved: ['situation-001', 'situation-001', 'old-id', 2, null],
     lastViewed: { all: 'situation-002', work: 'situation-001', relationships: 5, unknown: 'situation-011' },
+    searchQuery: ['message'],
+    customDraft: 1,
   }));
   const prefs = createPreferences(storage);
   expect(prefs.savedIds()).toEqual(['situation-001']);
   expect(prefs.lastViewed('all')).toBe('situation-002');
+  expect(prefs.searchQuery()).toBe('');
+  expect(prefs.customDraft()).toBe('');
   for (const scope of ['work', 'relationships', 'unknown']) expect(prefs.lastViewed(scope)).toBeUndefined();
   storage.setItem(STORAGE_KEY, '{invalid JSON');
   prefs.refresh();
   expect(prefs.savedIds()).toEqual([]);
   expect(prefs.lastViewed('all')).toBeUndefined();
+});
+
+it('preserves draft and search text exactly, alongside existing bookmarks and progress', () => {
+  const storage = memoryStorage();
+  storage.setItem(STORAGE_KEY, JSON.stringify({ saved: ['situation-001'], lastViewed: { work: 'situation-011' } }));
+  const prefs = createPreferences(storage);
+  expect(prefs.searchQuery()).toBe('');
+  expect(prefs.customDraft()).toBe('');
+  const draft = ' My friend went quiet.\nI wonder what happened. ';
+  prefs.setCustomDraft(draft);
+  prefs.setSearchQuery('  message ');
+  prefs.setSearchQuery('  message ');
+  expect(storage.setItem).toHaveBeenCalledTimes(3);
+
+  const reopen = createPreferences(storage);
+  expect(reopen.customDraft()).toBe(draft);
+  expect(reopen.searchQuery()).toBe('  message ');
+  expect(reopen.savedIds()).toEqual(['situation-001']);
+  expect(reopen.lastViewed('work')).toBe('situation-011');
+  reopen.setSearchQuery('');
+  reopen.setCustomDraft('');
+  const cleared = createPreferences(storage);
+  expect(cleared.searchQuery()).toBe('');
+  expect(cleared.customDraft()).toBe('');
 });
 
 it('keeps the current session usable when reading and writing storage fail', () => {
@@ -73,6 +101,10 @@ it('keeps the current session usable when reading and writing storage fail', () 
   const prefs = createPreferences(storage);
   prefs.remember('work', 'situation-012');
   prefs.toggleSaved('situation-012');
+  prefs.setSearchQuery('praise');
+  prefs.setCustomDraft('A colleague received praise.');
   expect(prefs.isSaved('situation-012')).toBe(true);
   expect(prefs.lastViewed('work')).toBe('situation-012');
+  expect(prefs.searchQuery()).toBe('praise');
+  expect(prefs.customDraft()).toBe('A colleague received praise.');
 });
