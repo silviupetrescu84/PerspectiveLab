@@ -1,0 +1,1519 @@
+{
+  "title": "Perspective Lab — Everyday Situations",
+  "version": 1,
+  "description": "Illustrative situations with common initial interpretations and plausible alternatives. These are prompts for exploration, not facts about anyone’s intentions or correct answers.",
+  "categories": [
+    "Relationships",
+    "Work",
+    "Self-Confidence",
+    "Social Situations",
+    "Mistakes & Setbacks",
+    "Uncertainty",
+    "Personal Growth",
+    "Family",
+    "Everyday Frustrations",
+    "Expectations"
+  ],
+  "situations": [
+    {
+      "id": "situation-001",
+      "category": "Relationships",
+      "situation": "A friend hasn't replied to my message.",
+      "initialInterpretations": [
+        "They're ignoring me.",
+        "I must have upset them."
+      ],
+      "alternativePerspectives": [
+        "They may be busy or distracted.",
+        "They might need time before responding.",
+        "A delayed reply doesn't explain how they feel about me.",
+        "I could check in kindly if it keeps bothering me."
+      ]
+    },
+    {
+      "id": "situation-002",
+      "category": "Relationships",
+      "situation": "My partner seems unusually quiet.",
+      "initialInterpretations": [
+        "They're angry with me.",
+        "Something is wrong between us."
+      ],
+      "alternativePerspectives": [
+        "They may be tired or preoccupied.",
+        "Quietness alone doesn't tell me what they're feeling.",
+        "I can ask how they're doing without assuming the answer.",
+        "They may want company or some space."
+      ]
+    },
+    {
+      "id": "situation-003",
+      "category": "Relationships",
+      "situation": "A friend cancelled our plans.",
+      "initialInterpretations": [
+        "They don't value our friendship.",
+        "They made an excuse to avoid me."
+      ],
+      "alternativePerspectives": [
+        "Something important may have come up.",
+        "Cancelling once doesn't define the friendship.",
+        "I can say I'm disappointed and suggest another time.",
+        "I can notice whether this is a pattern before deciding what it means."
+      ]
+    },
+    {
+      "id": "situation-004",
+      "category": "Relationships",
+      "situation": "Someone forgot my birthday.",
+      "initialInterpretations": [
+        "I don't matter to them.",
+        "They don't care about me."
+      ],
+      "alternativePerspectives": [
+        "People can care and still forget dates.",
+        "I can tell them birthdays are meaningful to me.",
+        "One forgotten date isn't a full measure of a relationship.",
+        "It's okay to feel hurt without deciding their intentions."
+      ]
+    },
+    {
+      "id": "situation-005",
+      "category": "Relationships",
+      "situation": "I wasn't invited to a gathering.",
+      "initialInterpretations": [
+        "Nobody wants me there.",
+        "My friends are excluding me deliberately."
+      ],
+      "alternativePerspectives": [
+        "The gathering may have had limited space or a different purpose.",
+        "I don't yet know who planned it or why.",
+        "I can ask about it if I need clarity.",
+        "Feeling left out is real even when the reason is uncertain."
+      ]
+    },
+    {
+      "id": "situation-006",
+      "category": "Relationships",
+      "situation": "A friend disagrees with my opinion.",
+      "initialInterpretations": [
+        "They don't respect me.",
+        "They think I'm foolish."
+      ],
+      "alternativePerspectives": [
+        "Disagreement can coexist with respect.",
+        "They may have different experiences or information.",
+        "I can ask what led them to their view.",
+        "I can hold my opinion without needing agreement."
+      ]
+    },
+    {
+      "id": "situation-007",
+      "category": "Relationships",
+      "situation": "Someone didn't notice I was upset.",
+      "initialInterpretations": [
+        "They don't care about my feelings.",
+        "I am invisible to them."
+      ],
+      "alternativePerspectives": [
+        "My feelings may not have been obvious from the outside.",
+        "They may have been dealing with their own concerns.",
+        "I can tell them what I need instead of expecting them to guess.",
+        "I can assess their response once they know."
+      ]
+    },
+    {
+      "id": "situation-008",
+      "category": "Relationships",
+      "situation": "My friend made new friends.",
+      "initialInterpretations": [
+        "I'll be replaced.",
+        "I'm not important anymore."
+      ],
+      "alternativePerspectives": [
+        "Friendships don't have to be exclusive.",
+        "Their other relationships don't automatically diminish ours.",
+        "I can invest in our friendship without competing.",
+        "I can talk about feeling distant if that's what is happening."
+      ]
+    },
+    {
+      "id": "situation-009",
+      "category": "Relationships",
+      "situation": "A loved one criticized my choice.",
+      "initialInterpretations": [
+        "They think I'm incapable.",
+        "They never support me."
+      ],
+      "alternativePerspectives": [
+        "Their concern may be about the choice, not my worth.",
+        "Their criticism could be unfair, and I can still consider it selectively.",
+        "I can ask what specifically worries them.",
+        "I can set a boundary around how feedback is given."
+      ]
+    },
+    {
+      "id": "situation-010",
+      "category": "Relationships",
+      "situation": "I reached out first again.",
+      "initialInterpretations": [
+        "I'm the only one who cares.",
+        "They take me for granted."
+      ],
+      "alternativePerspectives": [
+        "People have different habits around initiating contact.",
+        "One instance doesn't show the whole pattern.",
+        "I can say I'd appreciate them reaching out too.",
+        "I can evaluate reciprocity over time instead of guessing."
+      ]
+    },
+    {
+      "id": "situation-011",
+      "category": "Work",
+      "situation": "My manager asked to speak privately.",
+      "initialInterpretations": [
+        "I'm in trouble.",
+        "I've done something wrong."
+      ],
+      "alternativePerspectives": [
+        "There are many reasons for a private conversation.",
+        "I don't have enough information to predict the topic.",
+        "I can prepare calmly for different possibilities.",
+        "If there is feedback, I can listen and ask for specifics."
+      ]
+    },
+    {
+      "id": "situation-012",
+      "category": "Work",
+      "situation": "A colleague received praise, not me.",
+      "initialInterpretations": [
+        "My work doesn't matter.",
+        "I'm falling behind everyone."
+      ],
+      "alternativePerspectives": [
+        "Their achievement doesn't cancel out mine.",
+        "Praise is not a complete measure of contribution.",
+        "I can ask for feedback on my own work.",
+        "I can appreciate their success while wanting recognition too."
+      ]
+    },
+    {
+      "id": "situation-013",
+      "category": "Work",
+      "situation": "My idea wasn't chosen at work.",
+      "initialInterpretations": [
+        "My ideas are worthless.",
+        "Nobody listens to me."
+      ],
+      "alternativePerspectives": [
+        "The team may have weighed constraints I haven't seen.",
+        "An idea can be useful even if it isn't selected now.",
+        "I can ask what influenced the decision.",
+        "I can improve the proposal or try another approach."
+      ]
+    },
+    {
+      "id": "situation-014",
+      "category": "Work",
+      "situation": "I made a mistake in a presentation.",
+      "initialInterpretations": [
+        "Everyone thinks I'm incompetent.",
+        "I've ruined my reputation."
+      ],
+      "alternativePerspectives": [
+        "Listeners may remember the message more than the slip.",
+        "One mistake doesn't define my competence.",
+        "I can correct the error when needed.",
+        "I can use the experience to prepare differently next time."
+      ]
+    },
+    {
+      "id": "situation-015",
+      "category": "Work",
+      "situation": "My workload keeps increasing.",
+      "initialInterpretations": [
+        "I just have to cope.",
+        "If I speak up, I'll look weak."
+      ],
+      "alternativePerspectives": [
+        "A growing workload may need a priority discussion.",
+        "Asking for support can be responsible, not weak.",
+        "I can clarify what is most important.",
+        "I can set realistic expectations and raise capacity concerns."
+      ]
+    },
+    {
+      "id": "situation-016",
+      "category": "Work",
+      "situation": "A colleague challenged my approach.",
+      "initialInterpretations": [
+        "They're trying to undermine me.",
+        "They think they know better."
+      ],
+      "alternativePerspectives": [
+        "They may see a risk or alternative I missed.",
+        "Their tone and intention may be different things.",
+        "I can ask for the reasoning behind the challenge.",
+        "I can defend my thinking and still stay open to useful input."
+      ]
+    },
+    {
+      "id": "situation-017",
+      "category": "Work",
+      "situation": "I didn't finish everything today.",
+      "initialInterpretations": [
+        "I was unproductive.",
+        "I'm bad at managing my time."
+      ],
+      "alternativePerspectives": [
+        "The task list may have been unrealistic.",
+        "Some work takes longer than expected.",
+        "I can assess what mattered and what actually progressed.",
+        "I can adjust tomorrow's priorities without judging myself."
+      ]
+    },
+    {
+      "id": "situation-018",
+      "category": "Work",
+      "situation": "I wasn't selected for a project.",
+      "initialInterpretations": [
+        "I'm not capable enough.",
+        "My career is going nowhere."
+      ],
+      "alternativePerspectives": [
+        "Selection may depend on timing or specific needs.",
+        "I can ask what skills or experience would help next time.",
+        "One missed opportunity doesn't define my career.",
+        "I can pursue other projects that fit my goals."
+      ]
+    },
+    {
+      "id": "situation-019",
+      "category": "Work",
+      "situation": "My coworker responds very briefly.",
+      "initialInterpretations": [
+        "They dislike me.",
+        "They're annoyed by my questions."
+      ],
+      "alternativePerspectives": [
+        "They may simply communicate concisely.",
+        "They may be busy during the workday.",
+        "I can focus on whether the information is useful.",
+        "I can ask directly if clarity or collaboration becomes difficult."
+      ]
+    },
+    {
+      "id": "situation-020",
+      "category": "Work",
+      "situation": "I received unexpected feedback.",
+      "initialInterpretations": [
+        "I've failed at my job.",
+        "They've lost faith in me."
+      ],
+      "alternativePerspectives": [
+        "Feedback may point to a specific improvement area.",
+        "I can ask for examples before interpreting it broadly.",
+        "Some feedback is useful; some may need discussion.",
+        "My response to feedback matters more than a first reaction."
+      ]
+    },
+    {
+      "id": "situation-021",
+      "category": "Self-Confidence",
+      "situation": "I feel nervous meeting new people.",
+      "initialInterpretations": [
+        "I'm socially awkward.",
+        "Everyone will notice how uncomfortable I am."
+      ],
+      "alternativePerspectives": [
+        "Nervousness is common in unfamiliar situations.",
+        "Other people may be focused on themselves.",
+        "I can aim for one genuine conversation, not perfect confidence.",
+        "Feeling nervous doesn't prevent me from connecting."
+      ]
+    },
+    {
+      "id": "situation-022",
+      "category": "Self-Confidence",
+      "situation": "I don't know the answer to a question.",
+      "initialInterpretations": [
+        "I'm not intelligent enough.",
+        "I should already know this."
+      ],
+      "alternativePerspectives": [
+        "No one knows everything.",
+        "Not knowing creates an opportunity to learn.",
+        "I can say I don't know and find out.",
+        "My knowledge in one moment doesn't define my ability."
+      ]
+    },
+    {
+      "id": "situation-023",
+      "category": "Self-Confidence",
+      "situation": "Someone seems more confident than me.",
+      "initialInterpretations": [
+        "I'll never be like that.",
+        "I'm not good enough."
+      ],
+      "alternativePerspectives": [
+        "Confidence can look different from the outside.",
+        "We may have different levels of experience.",
+        "I can develop confidence through practice.",
+        "I don't need to copy someone else's personality."
+      ]
+    },
+    {
+      "id": "situation-024",
+      "category": "Self-Confidence",
+      "situation": "I dislike how I look in a photo.",
+      "initialInterpretations": [
+        "I look terrible.",
+        "Everyone sees me this way."
+      ],
+      "alternativePerspectives": [
+        "A photo captures one angle and moment.",
+        "I may be viewing myself more critically than others do.",
+        "My appearance isn't the sum of my value.",
+        "I can decide whether to keep the photo without attacking myself."
+      ]
+    },
+    {
+      "id": "situation-025",
+      "category": "Self-Confidence",
+      "situation": "I hesitated before speaking up.",
+      "initialInterpretations": [
+        "I'm weak.",
+        "I missed my only chance."
+      ],
+      "alternativePerspectives": [
+        "Taking time can reflect care or uncertainty.",
+        "I may have another opportunity to speak.",
+        "I can prepare a few words for next time.",
+        "One hesitation doesn't decide who I am."
+      ]
+    },
+    {
+      "id": "situation-026",
+      "category": "Self-Confidence",
+      "situation": "I compare myself to a successful peer.",
+      "initialInterpretations": [
+        "I'm behind in life.",
+        "I haven't achieved enough."
+      ],
+      "alternativePerspectives": [
+        "We may value different things and follow different paths.",
+        "I may not see the difficulties behind their success.",
+        "I can use admiration to clarify my own goals.",
+        "My progress deserves to be measured against my priorities."
+      ]
+    },
+    {
+      "id": "situation-027",
+      "category": "Self-Confidence",
+      "situation": "I need help with something simple.",
+      "initialInterpretations": [
+        "I'm incompetent.",
+        "I shouldn't have to ask."
+      ],
+      "alternativePerspectives": [
+        "Everyone needs help in some areas.",
+        "A question can save time and prevent mistakes.",
+        "I can ask without making it a judgment of myself.",
+        "Learning is part of becoming more capable."
+      ]
+    },
+    {
+      "id": "situation-028",
+      "category": "Self-Confidence",
+      "situation": "Someone complimented my work.",
+      "initialInterpretations": [
+        "They're only being polite.",
+        "I don't deserve the praise."
+      ],
+      "alternativePerspectives": [
+        "They may genuinely appreciate what I did.",
+        "I can accept the compliment without proving anything.",
+        "My doubts don't make their feedback false.",
+        "I can ask what they found helpful if I want clarity."
+      ]
+    },
+    {
+      "id": "situation-029",
+      "category": "Self-Confidence",
+      "situation": "I feel unsure about a new challenge.",
+      "initialInterpretations": [
+        "I'm not ready.",
+        "I'll embarrass myself."
+      ],
+      "alternativePerspectives": [
+        "Uncertainty often comes with trying something new.",
+        "I can start with a manageable first step.",
+        "I may learn skills during the challenge, not before it.",
+        "I can assess the risk realistically rather than assuming failure."
+      ]
+    },
+    {
+      "id": "situation-030",
+      "category": "Self-Confidence",
+      "situation": "I made an awkward comment.",
+      "initialInterpretations": [
+        "I'm embarrassing.",
+        "People will remember forever."
+      ],
+      "alternativePerspectives": [
+        "Others may have barely noticed or moved on.",
+        "I can clarify or apologize if needed.",
+        "An awkward moment doesn't define my social ability.",
+        "I can treat myself as I would treat a friend."
+      ]
+    },
+    {
+      "id": "situation-031",
+      "category": "Social Situations",
+      "situation": "I walked into a room alone.",
+      "initialInterpretations": [
+        "Everyone is looking at me.",
+        "I don't belong here."
+      ],
+      "alternativePerspectives": [
+        "Others may be occupied with their own conversations.",
+        "Arriving alone doesn't mean being unwelcome.",
+        "I can look for one approachable person.",
+        "I can give myself a little time to settle in."
+      ]
+    },
+    {
+      "id": "situation-032",
+      "category": "Social Situations",
+      "situation": "Someone laughed after I spoke.",
+      "initialInterpretations": [
+        "They're laughing at me.",
+        "I said something stupid."
+      ],
+      "alternativePerspectives": [
+        "Their laughter may have another cause.",
+        "Even if my comment amused them, that isn't necessarily rejection.",
+        "I can ask if I genuinely need clarification.",
+        "I don't need to decide what it means without evidence."
+      ]
+    },
+    {
+      "id": "situation-033",
+      "category": "Social Situations",
+      "situation": "My joke didn't get a reaction.",
+      "initialInterpretations": [
+        "Nobody finds me funny.",
+        "I've made things uncomfortable."
+      ],
+      "alternativePerspectives": [
+        "Different people respond to different humor.",
+        "The group may not have heard me.",
+        "One joke isn't a verdict on my personality.",
+        "I can move on without replaying it."
+      ]
+    },
+    {
+      "id": "situation-034",
+      "category": "Social Situations",
+      "situation": "I forgot someone's name.",
+      "initialInterpretations": [
+        "I'm rude.",
+        "They'll think I don't care."
+      ],
+      "alternativePerspectives": [
+        "Names can be difficult to remember.",
+        "I can simply ask them to remind me.",
+        "Being attentive now matters more than pretending.",
+        "Most people have forgotten names themselves."
+      ]
+    },
+    {
+      "id": "situation-035",
+      "category": "Social Situations",
+      "situation": "I didn't know what to say next.",
+      "initialInterpretations": [
+        "I'm boring.",
+        "The conversation is failing because of me."
+      ],
+      "alternativePerspectives": [
+        "Pauses are normal in conversation.",
+        "The other person also shapes the exchange.",
+        "I can ask a genuine question or simply listen.",
+        "A quiet moment doesn't mean I failed."
+      ]
+    },
+    {
+      "id": "situation-036",
+      "category": "Social Situations",
+      "situation": "Someone looked at their phone.",
+      "initialInterpretations": [
+        "They're bored with me.",
+        "I'm wasting their time."
+      ],
+      "alternativePerspectives": [
+        "They may be checking something important.",
+        "A glance doesn't reveal their overall interest.",
+        "I can notice whether they're engaged over time.",
+        "I can ask if this is a good moment to talk."
+      ]
+    },
+    {
+      "id": "situation-037",
+      "category": "Social Situations",
+      "situation": "A group conversation moved on.",
+      "initialInterpretations": [
+        "Nobody values my input.",
+        "I was ignored on purpose."
+      ],
+      "alternativePerspectives": [
+        "Group conversations can change direction quickly.",
+        "People may not have heard or understood my point.",
+        "I can return to it if it matters.",
+        "I can participate without needing every comment acknowledged."
+      ]
+    },
+    {
+      "id": "situation-038",
+      "category": "Social Situations",
+      "situation": "I left a party early.",
+      "initialInterpretations": [
+        "I'm antisocial.",
+        "People will think I'm strange."
+      ],
+      "alternativePerspectives": [
+        "I may simply have reached my social limit.",
+        "Leaving early can be a reasonable choice.",
+        "Others may not pay much attention to when I leave.",
+        "I can enjoy gatherings in ways that suit me."
+      ]
+    },
+    {
+      "id": "situation-039",
+      "category": "Social Situations",
+      "situation": "Two people started whispering.",
+      "initialInterpretations": [
+        "They're talking about me.",
+        "They must dislike me."
+      ],
+      "alternativePerspectives": [
+        "Their conversation may be unrelated to me.",
+        "I have no evidence of their topic.",
+        "Even if they're discussing me, I don't know the intent.",
+        "I can return attention to what I'm doing."
+      ]
+    },
+    {
+      "id": "situation-040",
+      "category": "Social Situations",
+      "situation": "I wasn't included in a group photo.",
+      "initialInterpretations": [
+        "I'm not part of the group.",
+        "They intentionally left me out."
+      ],
+      "alternativePerspectives": [
+        "The photo may have been spontaneous.",
+        "People may not have realized I was nearby.",
+        "I can ask to join another photo if I want.",
+        "I can notice the broader relationship rather than one moment."
+      ]
+    },
+    {
+      "id": "situation-041",
+      "category": "Mistakes & Setbacks",
+      "situation": "I missed an important deadline.",
+      "initialInterpretations": [
+        "I've ruined everything.",
+        "I'm hopelessly disorganized."
+      ],
+      "alternativePerspectives": [
+        "There may be consequences, but they can be addressed.",
+        "I can communicate promptly and take responsibility.",
+        "I can identify what caused the delay.",
+        "One deadline doesn't define my ability to improve."
+      ]
+    },
+    {
+      "id": "situation-042",
+      "category": "Mistakes & Setbacks",
+      "situation": "I failed an exam.",
+      "initialInterpretations": [
+        "I'm not smart enough.",
+        "I should give up studying."
+      ],
+      "alternativePerspectives": [
+        "An exam measures performance at a particular time.",
+        "I can review where my understanding broke down.",
+        "I may need a different study method or support.",
+        "A setback doesn't decide my long-term potential."
+      ]
+    },
+    {
+      "id": "situation-043",
+      "category": "Mistakes & Setbacks",
+      "situation": "I abandoned a goal halfway.",
+      "initialInterpretations": [
+        "I never follow through.",
+        "There's no point trying again."
+      ],
+      "alternativePerspectives": [
+        "The goal may have been too large or poorly timed.",
+        "My priorities may have changed.",
+        "I can decide whether the goal still matters.",
+        "If it does, I can restart with a smaller step."
+      ]
+    },
+    {
+      "id": "situation-044",
+      "category": "Mistakes & Setbacks",
+      "situation": "I broke a promise to myself.",
+      "initialInterpretations": [
+        "I have no discipline.",
+        "I always let myself down."
+      ],
+      "alternativePerspectives": [
+        "One missed commitment doesn't erase previous effort.",
+        "I can ask what made following through difficult.",
+        "I can make the next commitment more realistic.",
+        "I can restart without punishing myself."
+      ]
+    },
+    {
+      "id": "situation-045",
+      "category": "Mistakes & Setbacks",
+      "situation": "A plan I made didn't work.",
+      "initialInterpretations": [
+        "I'm bad at planning.",
+        "All that effort was wasted."
+      ],
+      "alternativePerspectives": [
+        "The result may reveal useful information.",
+        "Some factors may have been outside my control.",
+        "I can change one part and try again.",
+        "Effort can teach me even without the hoped-for outcome."
+      ]
+    },
+    {
+      "id": "situation-046",
+      "category": "Mistakes & Setbacks",
+      "situation": "I lost my temper in a conversation.",
+      "initialInterpretations": [
+        "I'm a terrible person.",
+        "I always hurt people."
+      ],
+      "alternativePerspectives": [
+        "My reaction may have caused harm, and I can own it.",
+        "I can apologize without reducing myself to one moment.",
+        "I can identify what triggered the escalation.",
+        "I can practice responding differently next time."
+      ]
+    },
+    {
+      "id": "situation-047",
+      "category": "Mistakes & Setbacks",
+      "situation": "I spent money I meant to save.",
+      "initialInterpretations": [
+        "I'm irresponsible.",
+        "I'll never manage my finances."
+      ],
+      "alternativePerspectives": [
+        "One purchase doesn't determine my financial habits.",
+        "I can review what led to the decision.",
+        "I can adjust my plan and limits.",
+        "I can take responsibility without harsh labels."
+      ]
+    },
+    {
+      "id": "situation-048",
+      "category": "Mistakes & Setbacks",
+      "situation": "I struggled with a new skill.",
+      "initialInterpretations": [
+        "I have no talent.",
+        "Other people learn faster than me."
+      ],
+      "alternativePerspectives": [
+        "New skills often feel awkward at first.",
+        "I may need more repetitions or clearer guidance.",
+        "Different skills develop at different rates.",
+        "I can notice small improvements over time."
+      ]
+    },
+    {
+      "id": "situation-049",
+      "category": "Mistakes & Setbacks",
+      "situation": "I forgot an important task.",
+      "initialInterpretations": [
+        "I can't be trusted.",
+        "I'm always failing."
+      ],
+      "alternativePerspectives": [
+        "Forgetting one task is not the whole pattern.",
+        "I can repair the impact if possible.",
+        "I can set a reminder or change my system.",
+        "I can distinguish the mistake from my character."
+      ]
+    },
+    {
+      "id": "situation-050",
+      "category": "Mistakes & Setbacks",
+      "situation": "My first attempt was rejected.",
+      "initialInterpretations": [
+        "My work isn't good enough.",
+        "I shouldn't have tried."
+      ],
+      "alternativePerspectives": [
+        "Rejection can reflect fit, timing or quality.",
+        "I can seek specific feedback when available.",
+        "Submitting was still a meaningful step.",
+        "I can improve the work or find a different audience."
+      ]
+    },
+    {
+      "id": "situation-051",
+      "category": "Uncertainty",
+      "situation": "I haven't heard back after applying.",
+      "initialInterpretations": [
+        "I've definitely been rejected.",
+        "I must not be qualified."
+      ],
+      "alternativePerspectives": [
+        "Hiring timelines can be unpredictable.",
+        "Silence doesn't tell me the outcome.",
+        "I can follow up appropriately and continue applying.",
+        "My qualifications aren't defined by one response."
+      ]
+    },
+    {
+      "id": "situation-052",
+      "category": "Uncertainty",
+      "situation": "My plans might change suddenly.",
+      "initialInterpretations": [
+        "I won't be able to cope.",
+        "Everything will fall apart."
+      ],
+      "alternativePerspectives": [
+        "I have adapted to unexpected changes before.",
+        "I can prepare for what is within my control.",
+        "Not knowing the outcome isn't the same as danger.",
+        "I can make a flexible plan rather than predicting disaster."
+      ]
+    },
+    {
+      "id": "situation-053",
+      "category": "Uncertainty",
+      "situation": "I need to make a big decision.",
+      "initialInterpretations": [
+        "There's only one right answer.",
+        "I'll regret whatever I choose."
+      ],
+      "alternativePerspectives": [
+        "Important decisions can involve genuine trade-offs.",
+        "I can compare options using my values.",
+        "I may not be able to remove all uncertainty.",
+        "I can choose thoughtfully and adjust later if needed."
+      ]
+    },
+    {
+      "id": "situation-054",
+      "category": "Uncertainty",
+      "situation": "Someone's tone seemed different.",
+      "initialInterpretations": [
+        "They're upset with me.",
+        "Our relationship has changed."
+      ],
+      "alternativePerspectives": [
+        "Tone can shift with mood, fatigue or context.",
+        "I can't know their feelings from tone alone.",
+        "I can ask gently rather than guessing.",
+        "I can wait for more information before concluding."
+      ]
+    },
+    {
+      "id": "situation-055",
+      "category": "Uncertainty",
+      "situation": "I don't know what next year holds.",
+      "initialInterpretations": [
+        "I'm falling behind.",
+        "I need my whole future planned."
+      ],
+      "alternativePerspectives": [
+        "Most people cannot predict their whole future.",
+        "I can set a direction without knowing every step.",
+        "My values can guide choices through change.",
+        "A small next action may be enough for now."
+      ]
+    },
+    {
+      "id": "situation-056",
+      "category": "Uncertainty",
+      "situation": "I'm waiting for test results.",
+      "initialInterpretations": [
+        "Something is definitely wrong.",
+        "I won't handle bad news."
+      ],
+      "alternativePerspectives": [
+        "Waiting can be stressful without revealing the result.",
+        "I can seek reliable information from a professional.",
+        "I can arrange support while I wait.",
+        "I don't have to settle on an outcome before knowing it."
+      ]
+    },
+    {
+      "id": "situation-057",
+      "category": "Uncertainty",
+      "situation": "A project outcome is uncertain.",
+      "initialInterpretations": [
+        "It will probably fail.",
+        "I shouldn't get my hopes up."
+      ],
+      "alternativePerspectives": [
+        "Multiple outcomes may still be possible.",
+        "I can identify risks without treating them as certainties.",
+        "I can focus on the next useful action.",
+        "I can prepare alternatives without giving up."
+      ]
+    },
+    {
+      "id": "situation-058",
+      "category": "Uncertainty",
+      "situation": "A message sounded ambiguous.",
+      "initialInterpretations": [
+        "They meant something negative.",
+        "I must decode every word."
+      ],
+      "alternativePerspectives": [
+        "Text messages can lose tone and context.",
+        "Several interpretations may fit the words.",
+        "I can ask for clarification when it matters.",
+        "I can choose not to overanalyze what I can't know."
+      ]
+    },
+    {
+      "id": "situation-059",
+      "category": "Uncertainty",
+      "situation": "I might move to a new city.",
+      "initialInterpretations": [
+        "I'll never feel at home.",
+        "I'll lose everyone important to me."
+      ],
+      "alternativePerspectives": [
+        "Transition can bring difficulty and opportunity.",
+        "Existing relationships may be maintained intentionally.",
+        "I can research support and community options.",
+        "I can weigh the choice without predicting a permanent outcome."
+      ]
+    },
+    {
+      "id": "situation-060",
+      "category": "Uncertainty",
+      "situation": "I'm unsure which path suits me.",
+      "initialInterpretations": [
+        "I'm wasting my life.",
+        "Everyone else has it figured out."
+      ],
+      "alternativePerspectives": [
+        "Many people explore several paths over time.",
+        "Others' certainty may be less complete than it seems.",
+        "I can test interests through small experiments.",
+        "I can choose based on what matters now."
+      ]
+    },
+    {
+      "id": "situation-061",
+      "category": "Personal Growth",
+      "situation": "I haven't kept a new habit going.",
+      "initialInterpretations": [
+        "I'm not disciplined enough.",
+        "I always quit."
+      ],
+      "alternativePerspectives": [
+        "The habit may be too demanding for my schedule.",
+        "I can reduce it to a smaller action.",
+        "Missing repetitions doesn't erase what I learned.",
+        "I can try a different cue or environment."
+      ]
+    },
+    {
+      "id": "situation-062",
+      "category": "Personal Growth",
+      "situation": "My progress feels slow.",
+      "initialInterpretations": [
+        "Nothing is changing.",
+        "I'm wasting my effort."
+      ],
+      "alternativePerspectives": [
+        "Some changes are hard to notice day to day.",
+        "I can look for concrete signs of progress.",
+        "I may need to adjust my strategy.",
+        "Slow progress can still be meaningful progress."
+      ]
+    },
+    {
+      "id": "situation-063",
+      "category": "Personal Growth",
+      "situation": "I feel unmotivated to practice.",
+      "initialInterpretations": [
+        "I'm lazy.",
+        "I must not care enough."
+      ],
+      "alternativePerspectives": [
+        "Energy and motivation naturally fluctuate.",
+        "The next step may be too big or unclear.",
+        "I can begin with two manageable minutes.",
+        "Caring about something doesn't mean always feeling motivated."
+      ]
+    },
+    {
+      "id": "situation-064",
+      "category": "Personal Growth",
+      "situation": "I returned to an old habit.",
+      "initialInterpretations": [
+        "I've undone all my progress.",
+        "I can't change."
+      ],
+      "alternativePerspectives": [
+        "Setbacks are part of many change processes.",
+        "I still have skills and experience from earlier attempts.",
+        "I can notice what triggered the return.",
+        "I can resume with one helpful choice."
+      ]
+    },
+    {
+      "id": "situation-065",
+      "category": "Personal Growth",
+      "situation": "I can't choose which skill to learn.",
+      "initialInterpretations": [
+        "I'm indecisive.",
+        "I'll choose the wrong thing."
+      ],
+      "alternativePerspectives": [
+        "Several options may be worthwhile.",
+        "I can try one briefly before committing.",
+        "My interests may evolve through experience.",
+        "I can choose a direction without closing every other door."
+      ]
+    },
+    {
+      "id": "situation-066",
+      "category": "Personal Growth",
+      "situation": "I keep putting off a meaningful task.",
+      "initialInterpretations": [
+        "I'm hopeless at this.",
+        "I don't really want to improve."
+      ],
+      "alternativePerspectives": [
+        "The task may feel overwhelming or uncertain.",
+        "I can clarify what makes starting hard.",
+        "I can identify a tiny first step.",
+        "I can treat avoidance as information rather than identity."
+      ]
+    },
+    {
+      "id": "situation-067",
+      "category": "Personal Growth",
+      "situation": "I didn't reach my monthly goal.",
+      "initialInterpretations": [
+        "The month was a failure.",
+        "I need to push much harder."
+      ],
+      "alternativePerspectives": [
+        "A numerical target isn't the full picture.",
+        "My circumstances and capacity may have changed.",
+        "I can review what helped and what blocked me.",
+        "I can adjust the next goal to fit reality."
+      ]
+    },
+    {
+      "id": "situation-068",
+      "category": "Personal Growth",
+      "situation": "I notice the same reaction again.",
+      "initialInterpretations": [
+        "I never learn.",
+        "I'm stuck like this."
+      ],
+      "alternativePerspectives": [
+        "Noticing a pattern is itself useful awareness.",
+        "Longstanding reactions may take practice to change.",
+        "I can plan a different response for next time.",
+        "I can track small shifts rather than demanding perfection."
+      ]
+    },
+    {
+      "id": "situation-069",
+      "category": "Personal Growth",
+      "situation": "Learning something feels boring.",
+      "initialInterpretations": [
+        "I'm not a curious person.",
+        "This isn't worth doing."
+      ],
+      "alternativePerspectives": [
+        "This particular method may not engage me.",
+        "I can explore a different angle or format.",
+        "Some useful learning requires effort without constant excitement.",
+        "I can reconsider whether this topic fits my goals."
+      ]
+    },
+    {
+      "id": "situation-070",
+      "category": "Personal Growth",
+      "situation": "I need to rest instead of improving.",
+      "initialInterpretations": [
+        "I'm wasting valuable time.",
+        "I should always be productive."
+      ],
+      "alternativePerspectives": [
+        "Rest supports attention and sustainable effort.",
+        "My worth isn't measured by productivity.",
+        "I can make deliberate room for recovery.",
+        "Progress can include respecting my limits."
+      ]
+    },
+    {
+      "id": "situation-071",
+      "category": "Family",
+      "situation": "A family member dismissed my opinion.",
+      "initialInterpretations": [
+        "They never respect me.",
+        "My views don't count."
+      ],
+      "alternativePerspectives": [
+        "They may have reacted quickly or defensively.",
+        "Their disagreement doesn't erase my perspective.",
+        "I can explain how the dismissal affected me.",
+        "I can set boundaries if this is recurring."
+      ]
+    },
+    {
+      "id": "situation-072",
+      "category": "Family",
+      "situation": "A relative keeps giving advice.",
+      "initialInterpretations": [
+        "They think I can't manage.",
+        "They're trying to control me."
+      ],
+      "alternativePerspectives": [
+        "They may be expressing concern awkwardly.",
+        "Their advice may not suit my needs.",
+        "I can thank them and choose independently.",
+        "I can ask them to listen instead of advising."
+      ]
+    },
+    {
+      "id": "situation-073",
+      "category": "Family",
+      "situation": "I missed a family gathering.",
+      "initialInterpretations": [
+        "I've let everyone down.",
+        "I'm a bad family member."
+      ],
+      "alternativePerspectives": [
+        "I may have had valid competing responsibilities.",
+        "Family connection isn't measured by one event.",
+        "I can reach out in another way.",
+        "I can acknowledge disappointment without harsh self-judgment."
+      ]
+    },
+    {
+      "id": "situation-074",
+      "category": "Family",
+      "situation": "My sibling seems distant lately.",
+      "initialInterpretations": [
+        "They don't want me around.",
+        "I've done something wrong."
+      ],
+      "alternativePerspectives": [
+        "They may be managing changes in their own life.",
+        "Distance doesn't always mean rejection.",
+        "I can check in without pressure.",
+        "If the distance persists, we can talk about it."
+      ]
+    },
+    {
+      "id": "situation-075",
+      "category": "Family",
+      "situation": "A parent doesn't approve of my plan.",
+      "initialInterpretations": [
+        "I should abandon it.",
+        "They'll never understand me."
+      ],
+      "alternativePerspectives": [
+        "They may be worried about risks I can discuss.",
+        "I can value their view without surrendering my choice.",
+        "We may not reach agreement right away.",
+        "I can communicate my reasoning calmly."
+      ]
+    },
+    {
+      "id": "situation-076",
+      "category": "Family",
+      "situation": "A family conversation turned tense.",
+      "initialInterpretations": [
+        "We can't get along.",
+        "I always make things worse."
+      ],
+      "alternativePerspectives": [
+        "The topic may be sensitive for several people.",
+        "One tense exchange doesn't describe the whole relationship.",
+        "I can pause and return when emotions settle.",
+        "I can own my part without taking all the blame."
+      ]
+    },
+    {
+      "id": "situation-077",
+      "category": "Family",
+      "situation": "A relative forgot something important.",
+      "initialInterpretations": [
+        "They don't care about me.",
+        "I must not matter much."
+      ],
+      "alternativePerspectives": [
+        "Forgetting may have many explanations.",
+        "I can tell them why this mattered to me.",
+        "I can look at their actions across time.",
+        "I can acknowledge hurt without assuming motive."
+      ]
+    },
+    {
+      "id": "situation-078",
+      "category": "Family",
+      "situation": "My family expects a different career.",
+      "initialInterpretations": [
+        "I'm disappointing everyone.",
+        "My choices are selfish."
+      ],
+      "alternativePerspectives": [
+        "Different generations may value different kinds of security.",
+        "I can listen to concerns and still choose my path.",
+        "Their expectations don't fully define my responsibilities.",
+        "I can explain what makes the work meaningful to me."
+      ]
+    },
+    {
+      "id": "situation-079",
+      "category": "Family",
+      "situation": "I feel drained after family visits.",
+      "initialInterpretations": [
+        "I'm ungrateful.",
+        "I shouldn't need space."
+      ],
+      "alternativePerspectives": [
+        "Relationships can be meaningful and tiring at once.",
+        "I can enjoy connection while needing recovery.",
+        "I can adjust visit length or boundaries.",
+        "Taking space doesn't cancel care."
+      ]
+    },
+    {
+      "id": "situation-080",
+      "category": "Family",
+      "situation": "Someone compared me to a sibling.",
+      "initialInterpretations": [
+        "I'll never measure up.",
+        "They value my sibling more."
+      ],
+      "alternativePerspectives": [
+        "Comparisons can be unfair or thoughtless.",
+        "We have different strengths and paths.",
+        "I can ask not to be compared.",
+        "I can ground my worth outside others' rankings."
+      ]
+    },
+    {
+      "id": "situation-081",
+      "category": "Everyday Frustrations",
+      "situation": "Someone cut in front of me.",
+      "initialInterpretations": [
+        "People are always selfish.",
+        "My day is ruined."
+      ],
+      "alternativePerspectives": [
+        "Their behavior may be inconsiderate without defining everyone.",
+        "I can respond calmly if it's safe and useful.",
+        "I can protect my time without escalating.",
+        "One incident doesn't have to decide the whole day."
+      ]
+    },
+    {
+      "id": "situation-082",
+      "category": "Everyday Frustrations",
+      "situation": "Traffic made me late.",
+      "initialInterpretations": [
+        "Everything goes wrong for me.",
+        "Today is a disaster."
+      ],
+      "alternativePerspectives": [
+        "Traffic is frustrating and often outside my control.",
+        "I can notify someone about the delay.",
+        "I can adjust my route or timing next time.",
+        "A late arrival doesn't define the rest of my day."
+      ]
+    },
+    {
+      "id": "situation-083",
+      "category": "Everyday Frustrations",
+      "situation": "My internet stopped working.",
+      "initialInterpretations": [
+        "I can't get anything done.",
+        "This always happens at the worst time."
+      ],
+      "alternativePerspectives": [
+        "The outage may be temporary.",
+        "I can switch to an offline task if possible.",
+        "I can troubleshoot one step at a time.",
+        "Frustration is understandable without predicting the whole day."
+      ]
+    },
+    {
+      "id": "situation-084",
+      "category": "Everyday Frustrations",
+      "situation": "Someone spoke sharply to me.",
+      "initialInterpretations": [
+        "They have no respect for me.",
+        "I need to snap back."
+      ],
+      "alternativePerspectives": [
+        "Their tone may reflect stress, but it can still be addressed.",
+        "I can respond firmly without matching the sharpness.",
+        "I can ask what they meant.",
+        "I can decide whether a boundary is needed."
+      ]
+    },
+    {
+      "id": "situation-085",
+      "category": "Everyday Frustrations",
+      "situation": "I spilled coffee on my clothes.",
+      "initialInterpretations": [
+        "I'm so clumsy.",
+        "This day is already going badly."
+      ],
+      "alternativePerspectives": [
+        "Accidents happen to everyone.",
+        "I can clean up and adjust my plans.",
+        "One inconvenience doesn't predict future events.",
+        "I can be annoyed without insulting myself."
+      ]
+    },
+    {
+      "id": "situation-086",
+      "category": "Everyday Frustrations",
+      "situation": "The shop ran out of what I needed.",
+      "initialInterpretations": [
+        "Nothing ever works out.",
+        "This trip was pointless."
+      ],
+      "alternativePerspectives": [
+        "Stock can change unpredictably.",
+        "I can look for an alternative or another day.",
+        "The inconvenience is real but limited.",
+        "I can choose the next useful step."
+      ]
+    },
+    {
+      "id": "situation-087",
+      "category": "Everyday Frustrations",
+      "situation": "Someone interrupted me repeatedly.",
+      "initialInterpretations": [
+        "What I say doesn't matter.",
+        "I have to stay silent."
+      ],
+      "alternativePerspectives": [
+        "They may not notice their habit.",
+        "Their interruptions can be addressed respectfully.",
+        "I can say I'd like to finish my point.",
+        "I can consider a firmer boundary if it continues."
+      ]
+    },
+    {
+      "id": "situation-088",
+      "category": "Everyday Frustrations",
+      "situation": "My plans were delayed by weather.",
+      "initialInterpretations": [
+        "The whole weekend is wasted.",
+        "I can't enjoy anything now."
+      ],
+      "alternativePerspectives": [
+        "It's reasonable to be disappointed.",
+        "I can look for a different enjoyable activity.",
+        "The original plan may still happen later.",
+        "A change of plans isn't the end of the weekend."
+      ]
+    },
+    {
+      "id": "situation-089",
+      "category": "Everyday Frustrations",
+      "situation": "I misplaced something important.",
+      "initialInterpretations": [
+        "I'm hopelessly forgetful.",
+        "I always mess things up."
+      ],
+      "alternativePerspectives": [
+        "Misplacing items is common under stress.",
+        "I can retrace my steps calmly.",
+        "I can create a consistent place for essentials.",
+        "This mistake doesn't define my competence."
+      ]
+    },
+    {
+      "id": "situation-090",
+      "category": "Everyday Frustrations",
+      "situation": "A task took longer than expected.",
+      "initialInterpretations": [
+        "I'm inefficient.",
+        "I've lost the whole day."
+      ],
+      "alternativePerspectives": [
+        "My time estimate may have been unrealistic.",
+        "The task might have involved unexpected complexity.",
+        "I can adjust my next estimate.",
+        "I can value the work completed rather than only the delay."
+      ]
+    },
+    {
+      "id": "situation-091",
+      "category": "Expectations",
+      "situation": "My weekend wasn't productive.",
+      "initialInterpretations": [
+        "I wasted my free time.",
+        "I should have accomplished more."
+      ],
+      "alternativePerspectives": [
+        "Rest and enjoyment can be worthwhile uses of time.",
+        "Productivity isn't the only measure of a good weekend.",
+        "I can notice what I actually needed.",
+        "I can plan differently next time without regret."
+      ]
+    },
+    {
+      "id": "situation-092",
+      "category": "Expectations",
+      "situation": "A celebration felt ordinary.",
+      "initialInterpretations": [
+        "It wasn't special enough.",
+        "We failed to make it memorable."
+      ],
+      "alternativePerspectives": [
+        "Meaning doesn't always feel dramatic in the moment.",
+        "Small shared moments can still matter.",
+        "I can appreciate what went well.",
+        "I can express what I'd enjoy next time."
+      ]
+    },
+    {
+      "id": "situation-093",
+      "category": "Expectations",
+      "situation": "My vacation didn't match my hopes.",
+      "initialInterpretations": [
+        "The trip was a failure.",
+        "I can't enjoy anything properly."
+      ],
+      "alternativePerspectives": [
+        "Some parts may still have been worthwhile.",
+        "High expectations can magnify disappointment.",
+        "I can acknowledge what didn't work.",
+        "I can adjust future plans based on what I learned."
+      ]
+    },
+    {
+      "id": "situation-094",
+      "category": "Expectations",
+      "situation": "I don't feel happy all the time.",
+      "initialInterpretations": [
+        "Something must be wrong with me.",
+        "I'm failing at wellbeing."
+      ],
+      "alternativePerspectives": [
+        "Emotions naturally change.",
+        "A meaningful life includes difficult moments.",
+        "I can care for myself without requiring constant happiness.",
+        "Wellbeing isn't the absence of discomfort."
+      ]
+    },
+    {
+      "id": "situation-095",
+      "category": "Expectations",
+      "situation": "I haven't achieved my age milestones.",
+      "initialInterpretations": [
+        "I'm behind everyone.",
+        "I've missed my chance."
+      ],
+      "alternativePerspectives": [
+        "Life timelines vary widely.",
+        "Social milestones may not fit my values.",
+        "I can focus on what matters now.",
+        "There may still be many possible paths forward."
+      ]
+    },
+    {
+      "id": "situation-096",
+      "category": "Expectations",
+      "situation": "A gift didn't get much enthusiasm.",
+      "initialInterpretations": [
+        "They hated it.",
+        "I should never try again."
+      ],
+      "alternativePerspectives": [
+        "People express appreciation differently.",
+        "The gift may not have suited them, and that can be okay.",
+        "I can ask what they enjoy next time.",
+        "The thought and the outcome can be separate."
+      ]
+    },
+    {
+      "id": "situation-097",
+      "category": "Expectations",
+      "situation": "My home doesn't look perfect.",
+      "initialInterpretations": [
+        "I'm failing at adulthood.",
+        "People will judge me."
+      ],
+      "alternativePerspectives": [
+        "Homes reflect different needs and resources.",
+        "I can choose what matters most to improve.",
+        "Comfort and function may matter more than appearance.",
+        "I don't need perfection to welcome someone."
+      ]
+    },
+    {
+      "id": "situation-098",
+      "category": "Expectations",
+      "situation": "I wasn't instantly good at a hobby.",
+      "initialInterpretations": [
+        "I'm not talented enough.",
+        "This hobby isn't for me."
+      ],
+      "alternativePerspectives": [
+        "Enjoyment doesn't require immediate skill.",
+        "Beginners usually need practice.",
+        "I can focus on what I like about the process.",
+        "I can decide over time whether to continue."
+      ]
+    },
+    {
+      "id": "situation-099",
+      "category": "Expectations",
+      "situation": "An important day felt stressful.",
+      "initialInterpretations": [
+        "I ruined the occasion.",
+        "I should have enjoyed every second."
+      ],
+      "alternativePerspectives": [
+        "Meaningful events can carry pressure.",
+        "Stress and enjoyment can coexist.",
+        "I can remember more than the hardest moment.",
+        "I can be kind to myself about imperfect experiences."
+      ]
+    },
+    {
+      "id": "situation-100",
+      "category": "Expectations",
+      "situation": "My progress doesn't look impressive.",
+      "initialInterpretations": [
+        "It doesn't count.",
+        "I need bigger results to feel proud."
+      ],
+      "alternativePerspectives": [
+        "Small changes can matter in daily life.",
+        "Comparing results can hide real effort.",
+        "I can recognize what changed for me.",
+        "I can choose goals based on meaning, not appearance."
+      ]
+    }
+  ]
+}

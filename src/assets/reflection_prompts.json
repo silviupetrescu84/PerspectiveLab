@@ -1,0 +1,219 @@
+{
+  "title": "Perspective Lab — Evidence & Reflection Prompts",
+  "version": 1,
+  "description": "Optional prompts to help users separate observations from assumptions, consider evidence and uncertainty, and identify fair next steps.",
+  "defaultPrompts": {
+    "supports": "What supports this interpretation?",
+    "challenges": "What might suggest something else?",
+    "unknowns": "What do I still not know?"
+  },
+  "categoryOrder": [
+    "clarify_facts",
+    "supporting_evidence",
+    "alternative_evidence",
+    "uncertainty",
+    "meaning_and_next_step"
+  ],
+  "prompts": [
+    {
+      "id": "reflection-001",
+      "category": "clarify_facts",
+      "text": "What happened that someone else could observe?"
+    },
+    {
+      "id": "reflection-002",
+      "category": "clarify_facts",
+      "text": "Which part of the situation is a fact, and which is my interpretation?"
+    },
+    {
+      "id": "reflection-003",
+      "category": "clarify_facts",
+      "text": "What exact words or actions am I reacting to?"
+    },
+    {
+      "id": "reflection-004",
+      "category": "clarify_facts",
+      "text": "What did I notice, and what am I filling in?"
+    },
+    {
+      "id": "reflection-005",
+      "category": "clarify_facts",
+      "text": "What information would help me understand the situation better?"
+    },
+    {
+      "id": "reflection-006",
+      "category": "clarify_facts",
+      "text": "Which details am I most certain about?"
+    },
+    {
+      "id": "reflection-007",
+      "category": "clarify_facts",
+      "text": "Which details might I be remembering imperfectly?"
+    },
+    {
+      "id": "reflection-008",
+      "category": "clarify_facts",
+      "text": "What happened just before I drew this conclusion?"
+    },
+    {
+      "id": "reflection-009",
+      "category": "supporting_evidence",
+      "text": "What specific evidence supports my interpretation?"
+    },
+    {
+      "id": "reflection-010",
+      "category": "supporting_evidence",
+      "text": "Have I seen this pattern more than once?"
+    },
+    {
+      "id": "reflection-011",
+      "category": "supporting_evidence",
+      "text": "Is this based on someone's actions or on what I fear they think?"
+    },
+    {
+      "id": "reflection-012",
+      "category": "supporting_evidence",
+      "text": "What would I point to if explaining my view to a friend?"
+    },
+    {
+      "id": "reflection-013",
+      "category": "supporting_evidence",
+      "text": "Are there examples that genuinely support my concern?"
+    },
+    {
+      "id": "reflection-014",
+      "category": "supporting_evidence",
+      "text": "What evidence is recent, and what comes from older experiences?"
+    },
+    {
+      "id": "reflection-015",
+      "category": "supporting_evidence",
+      "text": "Am I relying on one moment to explain a larger pattern?"
+    },
+    {
+      "id": "reflection-016",
+      "category": "supporting_evidence",
+      "text": "Does the evidence support my full conclusion or only part of it?"
+    },
+    {
+      "id": "reflection-017",
+      "category": "alternative_evidence",
+      "text": "What facts don't fit my first interpretation?"
+    },
+    {
+      "id": "reflection-018",
+      "category": "alternative_evidence",
+      "text": "Could the same behavior have another explanation?"
+    },
+    {
+      "id": "reflection-019",
+      "category": "alternative_evidence",
+      "text": "What might I notice if I were less certain of my first conclusion?"
+    },
+    {
+      "id": "reflection-020",
+      "category": "alternative_evidence",
+      "text": "Has this person or situation been different at other times?"
+    },
+    {
+      "id": "reflection-021",
+      "category": "alternative_evidence",
+      "text": "What would someone with a different perspective point out?"
+    },
+    {
+      "id": "reflection-022",
+      "category": "alternative_evidence",
+      "text": "Am I overlooking a practical or ordinary explanation?"
+    },
+    {
+      "id": "reflection-023",
+      "category": "alternative_evidence",
+      "text": "What would I tell a friend who had the same concern?"
+    },
+    {
+      "id": "reflection-024",
+      "category": "alternative_evidence",
+      "text": "What would make me reconsider this interpretation?"
+    },
+    {
+      "id": "reflection-025",
+      "category": "uncertainty",
+      "text": "What do I not know yet?"
+    },
+    {
+      "id": "reflection-026",
+      "category": "uncertainty",
+      "text": "Am I assuming I know someone else's intentions?"
+    },
+    {
+      "id": "reflection-027",
+      "category": "uncertainty",
+      "text": "What outcome am I predicting without enough information?"
+    },
+    {
+      "id": "reflection-028",
+      "category": "uncertainty",
+      "text": "Could more than one interpretation be true?"
+    },
+    {
+      "id": "reflection-029",
+      "category": "uncertainty",
+      "text": "What question could I ask to get clarity?"
+    },
+    {
+      "id": "reflection-030",
+      "category": "uncertainty",
+      "text": "What could remain uncertain even after I ask?"
+    },
+    {
+      "id": "reflection-031",
+      "category": "uncertainty",
+      "text": "Can I leave this unresolved for now?"
+    },
+    {
+      "id": "reflection-032",
+      "category": "uncertainty",
+      "text": "What is within my control while I wait for more information?"
+    },
+    {
+      "id": "reflection-033",
+      "category": "meaning_and_next_step",
+      "text": "What makes this situation particularly important to me?"
+    },
+    {
+      "id": "reflection-034",
+      "category": "meaning_and_next_step",
+      "text": "Which value or need feels affected here?"
+    },
+    {
+      "id": "reflection-035",
+      "category": "meaning_and_next_step",
+      "text": "What feeling is my first interpretation connected to?"
+    },
+    {
+      "id": "reflection-036",
+      "category": "meaning_and_next_step",
+      "text": "What boundary might be reasonable regardless of the explanation?"
+    },
+    {
+      "id": "reflection-037",
+      "category": "meaning_and_next_step",
+      "text": "What would a fair and respectful response look like?"
+    },
+    {
+      "id": "reflection-038",
+      "category": "meaning_and_next_step",
+      "text": "What is one small step I can take without assuming the worst?"
+    },
+    {
+      "id": "reflection-039",
+      "category": "meaning_and_next_step",
+      "text": "What part of my concern deserves attention even if my guess is wrong?"
+    },
+    {
+      "id": "reflection-040",
+      "category": "meaning_and_next_step",
+      "text": "What interpretation helps me stay open to facts and protect my needs?"
+    }
+  ]
+}

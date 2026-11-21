@@ -1,0 +1,264 @@
+{
+  "title": "Perspective Lab — Perspective Builder Prompts",
+  "version": 1,
+  "description": "Optional sentence starters for constructing honest, balanced and personally meaningful interpretations. No prompt requires a positive interpretation or a change in belief.",
+  "categoryOrder": [
+    "allow_uncertainty",
+    "widen_the_view",
+    "respond_to_self_kindly",
+    "protect_needs_and_boundaries",
+    "choose_next_step"
+  ],
+  "prompts": [
+    {
+      "id": "perspective-001",
+      "category": "allow_uncertainty",
+      "text": "Another possibility is that…"
+    },
+    {
+      "id": "perspective-002",
+      "category": "allow_uncertainty",
+      "text": "What I know for sure is…"
+    },
+    {
+      "id": "perspective-003",
+      "category": "allow_uncertainty",
+      "text": "What I don't know yet is…"
+    },
+    {
+      "id": "perspective-004",
+      "category": "allow_uncertainty",
+      "text": "I may not have the full picture because…"
+    },
+    {
+      "id": "perspective-005",
+      "category": "allow_uncertainty",
+      "text": "It's possible that…"
+    },
+    {
+      "id": "perspective-006",
+      "category": "allow_uncertainty",
+      "text": "There could be several explanations, including…"
+    },
+    {
+      "id": "perspective-007",
+      "category": "allow_uncertainty",
+      "text": "I can wait for more information about…"
+    },
+    {
+      "id": "perspective-008",
+      "category": "allow_uncertainty",
+      "text": "I don't need to decide right now whether…"
+    },
+    {
+      "id": "perspective-009",
+      "category": "allow_uncertainty",
+      "text": "The evidence doesn't yet tell me…"
+    },
+    {
+      "id": "perspective-010",
+      "category": "allow_uncertainty",
+      "text": "A conclusion I can hold lightly is…"
+    },
+    {
+      "id": "perspective-011",
+      "category": "widen_the_view",
+      "text": "If a friend were here, they might suggest…"
+    },
+    {
+      "id": "perspective-012",
+      "category": "widen_the_view",
+      "text": "From another person's viewpoint, this might look like…"
+    },
+    {
+      "id": "perspective-013",
+      "category": "widen_the_view",
+      "text": "A less personal explanation might be…"
+    },
+    {
+      "id": "perspective-014",
+      "category": "widen_the_view",
+      "text": "Something important I haven't considered is…"
+    },
+    {
+      "id": "perspective-015",
+      "category": "widen_the_view",
+      "text": "One detail that changes the picture is…"
+    },
+    {
+      "id": "perspective-016",
+      "category": "widen_the_view",
+      "text": "If I zoom out from this moment…"
+    },
+    {
+      "id": "perspective-017",
+      "category": "widen_the_view",
+      "text": "This one event doesn't necessarily mean…"
+    },
+    {
+      "id": "perspective-018",
+      "category": "widen_the_view",
+      "text": "A more complete description would include…"
+    },
+    {
+      "id": "perspective-019",
+      "category": "widen_the_view",
+      "text": "A different but plausible story is…"
+    },
+    {
+      "id": "perspective-020",
+      "category": "widen_the_view",
+      "text": "I can acknowledge both… and…"
+    },
+    {
+      "id": "perspective-021",
+      "category": "respond_to_self_kindly",
+      "text": "It makes sense that I feel… because…"
+    },
+    {
+      "id": "perspective-022",
+      "category": "respond_to_self_kindly",
+      "text": "I can be disappointed without telling myself…"
+    },
+    {
+      "id": "perspective-023",
+      "category": "respond_to_self_kindly",
+      "text": "A mistake doesn't mean that I am…"
+    },
+    {
+      "id": "perspective-024",
+      "category": "respond_to_self_kindly",
+      "text": "If I spoke to myself with care, I'd say…"
+    },
+    {
+      "id": "perspective-025",
+      "category": "respond_to_self_kindly",
+      "text": "I can recognize my effort in…"
+    },
+    {
+      "id": "perspective-026",
+      "category": "respond_to_self_kindly",
+      "text": "I don't have to be perfect to…"
+    },
+    {
+      "id": "perspective-027",
+      "category": "respond_to_self_kindly",
+      "text": "A kinder and still honest way to see this is…"
+    },
+    {
+      "id": "perspective-028",
+      "category": "respond_to_self_kindly",
+      "text": "I can take responsibility for… without…"
+    },
+    {
+      "id": "perspective-029",
+      "category": "respond_to_self_kindly",
+      "text": "I can give myself permission to…"
+    },
+    {
+      "id": "perspective-030",
+      "category": "respond_to_self_kindly",
+      "text": "My worth isn't determined by…"
+    },
+    {
+      "id": "perspective-031",
+      "category": "protect_needs_and_boundaries",
+      "text": "Even if their intention was harmless, I can…"
+    },
+    {
+      "id": "perspective-032",
+      "category": "protect_needs_and_boundaries",
+      "text": "What matters to me in this situation is…"
+    },
+    {
+      "id": "perspective-033",
+      "category": "protect_needs_and_boundaries",
+      "text": "I can ask for clarity by saying…"
+    },
+    {
+      "id": "perspective-034",
+      "category": "protect_needs_and_boundaries",
+      "text": "A boundary I could express is…"
+    },
+    {
+      "id": "perspective-035",
+      "category": "protect_needs_and_boundaries",
+      "text": "I can be understanding and still…"
+    },
+    {
+      "id": "perspective-036",
+      "category": "protect_needs_and_boundaries",
+      "text": "I can disagree respectfully by…"
+    },
+    {
+      "id": "perspective-037",
+      "category": "protect_needs_and_boundaries",
+      "text": "I don't have to accept… in order to…"
+    },
+    {
+      "id": "perspective-038",
+      "category": "protect_needs_and_boundaries",
+      "text": "My concern is worth addressing because…"
+    },
+    {
+      "id": "perspective-039",
+      "category": "protect_needs_and_boundaries",
+      "text": "The part I can take ownership of is…"
+    },
+    {
+      "id": "perspective-040",
+      "category": "protect_needs_and_boundaries",
+      "text": "I can choose to step back if…"
+    },
+    {
+      "id": "perspective-041",
+      "category": "choose_next_step",
+      "text": "The smallest helpful step I can take is…"
+    },
+    {
+      "id": "perspective-042",
+      "category": "choose_next_step",
+      "text": "Instead of guessing, I could…"
+    },
+    {
+      "id": "perspective-043",
+      "category": "choose_next_step",
+      "text": "I can focus my energy on…"
+    },
+    {
+      "id": "perspective-044",
+      "category": "choose_next_step",
+      "text": "If this happens again, I could…"
+    },
+    {
+      "id": "perspective-045",
+      "category": "choose_next_step",
+      "text": "I can ask myself what matters most about…"
+    },
+    {
+      "id": "perspective-046",
+      "category": "choose_next_step",
+      "text": "I can prepare for uncertainty by…"
+    },
+    {
+      "id": "perspective-047",
+      "category": "choose_next_step",
+      "text": "I can learn from this by…"
+    },
+    {
+      "id": "perspective-048",
+      "category": "choose_next_step",
+      "text": "For now, a fair conclusion might be…"
+    },
+    {
+      "id": "perspective-049",
+      "category": "choose_next_step",
+      "text": "My next step doesn't require certainty about…"
+    },
+    {
+      "id": "perspective-050",
+      "category": "choose_next_step",
+      "text": "I can move forward while allowing…"
+    }
+  ]
+}

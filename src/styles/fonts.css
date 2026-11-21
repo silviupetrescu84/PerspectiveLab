@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Manrope Variable';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url('@fontsource-variable/manrope/files/manrope-latin-wght-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('@fontsource/instrument-serif/files/instrument-serif-latin-400-italic.woff2') format('woff2');
+}
+
+/* Phosphor Icons 2.1.2 regular, subset to the glyphs used here. */
+@font-face {
+  font-family: 'Phosphor';
+  font-display: block;
+  src: url('../assets/phosphor-subset.woff2') format('woff2');
+}
+
+.ph { display: inline-block; font-family: 'Phosphor'; font-style: normal; font-weight: 400; line-height: 1; }
+.ph-bookmark-simple::before { content: '\e0ea'; }
+.ph-briefcase::before { content: '\e0ee'; }
+.ph-chat-circle::before { content: '\e168'; }
+.ph-chats::before { content: '\e17c'; }
+.ph-check::before { content: '\e182'; }
+.ph-compass::before { content: '\e1c8'; }
+.ph-heart::before { content: '\e2a8'; }
+.ph-house::before { content: '\e2c2'; }
+.ph-lightning::before { content: '\e2de'; }
+.ph-path::before { content: '\e39c'; }
+.ph-plant::before { content: '\ebae'; }
+.ph-shapes::before { content: '\ec5e'; }
+.ph-sparkle::before { content: '\e6a2'; }
+.ph-target::before { content: '\e47c'; }
+.ph-x::before { content: '\e4f6'; }
